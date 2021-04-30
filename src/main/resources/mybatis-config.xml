@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- DB 테이블과 컬럼들을 mapper 매핑을 위한 변수 선언 -->
+	<!-- mapper.xml에서 사용될 이름 및 db테이블 및 컬럼 이름 -->
+	<properties>
+		<property name="hotel_user" value="hotel_user" />
+		<property name="id" value="id" />
+		<property name="pw" value="pw" />
+		<property name="name" value="name" />
+		<property name="phone" value="phone" />
+		<property name="email" value="email" />
+		<property name="birth" value="birth" />
+		<property name="star" value="star" />
+	</properties>
+
+	<!-- mapper.xml 클래스 경로 설정 -->
+	<typeAliases>
+		<package name="web.project.spring.domain" />
+	</typeAliases>
+
+
+</configuration>
